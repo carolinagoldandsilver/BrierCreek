@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carolina Gold &amp; Silver Buying Event · Raleigh, NC</title>
-<meta name="description" content="NC Gold Buyers Group hosts a buying event at Aloft Raleigh-Durham Airport Brier Creek, November 11–14, 2026. Free evaluations, no obligation to sell. Appointments preferred, walk-ins welcome.">
+<title>Turn Your Unwanted Gold &amp; Silver Into Cash · Raleigh, NC</title>
+<meta name="description" content="Free private evaluations of gold, silver, coins, and sterling. No obligation to sell. November 11–14, 9 AM–5 PM at Aloft Brier Creek, Raleigh. Walk-ins welcome, appointments preferred.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -64,22 +64,6 @@
   }
   @media (prefers-reduced-motion:reduce){
     .shine-text{animation:none; background-position:20% 0;}
-  }
-
-  .pill{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    font-size:0.84rem;
-    font-weight:600;
-    border-radius:999px;
-    padding:7px 14px;
-    white-space:nowrap;
-  }
-  .pill-dark{
-    color:var(--gold-pale);
-    border:1px solid rgba(230,184,84,0.4);
-    background:rgba(230,184,84,0.08);
   }
 
   /* ---------- header ---------- */
@@ -142,18 +126,17 @@
     position:relative;
     z-index:2;
   }
-  .stop-flag{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    font-size:0.86rem;
+  .event-line{
+    display:inline-block;
+    font-size:0.92rem;
+    font-weight:600;
     color:var(--gold-pale);
     border:1px solid rgba(230,184,84,0.4);
-    border-radius:999px;
-    padding:6px 14px;
-    margin-bottom:18px;
+    border-radius:8px;
+    padding:8px 14px;
+    margin-top:22px;
   }
-  .stop-flag .dot{width:6px; height:6px; border-radius:50%; background:var(--gold-bright);}
+  .event-line a{color:var(--gold-pale); text-underline-offset:3px;}
   .hero h1{
     font-size:clamp(2.2rem, 4.4vw, 3.4rem);
     line-height:1.1;
@@ -165,18 +148,8 @@
     font-size:1.06rem;
     color:#d9cfe8;
   }
-  .badge-row{
-    margin-top:20px;
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-  }
   .cta-row{
-    margin-top:30px;
-    display:flex;
-    gap:16px;
-    align-items:center;
-    flex-wrap:wrap;
+    margin-top:28px;
   }
   .btn{
     display:inline-block;
@@ -186,8 +159,10 @@
     color:var(--ink);
     font-family:'Public Sans', sans-serif;
     font-weight:700;
-    font-size:1rem;
-    padding:14px 26px;
+    font-size:1.1rem;
+    text-decoration:none;
+    text-align:center;
+    padding:17px 34px;
     border-radius:3px;
     border:1px solid var(--gold);
     cursor:pointer;
@@ -204,13 +179,12 @@
     transition:left 0.6s ease;
   }
   .btn:hover::after{left:130%;}
-  .btn-ghost{
-    background:transparent;
-    color:var(--paper);
-    border:1px solid var(--line-on-dark);
+  .btn-note{
+    margin-top:12px;
+    font-size:0.95rem;
+    font-weight:600;
   }
-  .btn-ghost::after{display:none;}
-  .btn-ghost:hover{border-color:var(--silver); color:var(--paper); transform:none;}
+  .hero .btn-note{color:var(--gold-pale);}
 
   /* ticket stub */
   .ticket{
@@ -251,7 +225,6 @@
     padding-bottom:14px;
     margin-bottom:16px;
   }
-  .ticket-eyebrow strong{color:var(--gold);}
   .ticket h3{
     font-size:1.4rem;
     line-height:1.2;
@@ -274,106 +247,105 @@
     color:#6e6180;
   }
 
-  /* ---------- cta strip ---------- */
-  .cta-strip{
-    background:linear-gradient(100deg, var(--ink) 0%, var(--ink-soft) 100%);
-    color:var(--paper);
-    padding:46px 0;
-    text-align:center;
-    border-top:1px solid rgba(230,184,84,0.25);
-    border-bottom:1px solid rgba(230,184,84,0.25);
-  }
-  .cta-strip h2{
-    color:var(--paper);
-    font-size:clamp(1.5rem, 3vw, 2rem);
-    max-width:34ch;
-    margin:0 auto;
-  }
-  .cta-strip p{color:#d9cfe8; margin-top:12px;}
-  .cta-strip .btn{margin-top:22px;}
-
-  /* ---------- about ---------- */
+  /* ---------- shared ---------- */
   section{padding:72px 0;}
+  h2{font-size:clamp(1.6rem,2.6vw,2.1rem);}
   .col-narrow{max-width:62ch;}
-  .about p{margin-top:18px; color:#4a3d5c;}
-  .about h2{font-size:clamp(1.6rem,2.6vw,2.1rem);}
 
   /* ---------- what to bring ---------- */
   .bring{background:var(--paper-dim);}
-  .bring p.sub{margin-top:14px; color:#4a3d5c; max-width:56ch;}
-  .bring-cols{
-    margin-top:36px;
+  .bring-grid{
+    margin-top:30px;
     display:grid;
-    grid-template-columns:repeat(3, minmax(0,1fr));
+    grid-template-columns:repeat(2, minmax(0,1fr));
     gap:0;
+    border-top:1px solid var(--line-on-light);
   }
-  .bring-col{
-    padding:0 28px;
-    border-left:1px solid var(--line-on-light);
+  .bring-item{
+    padding:18px 0;
+    border-bottom:1px solid var(--line-on-light);
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    font-weight:500;
   }
-  .bring-col:first-child{padding-left:0; border-left:none;}
-  .bring-col h3{
+  .bring-item:nth-child(odd){padding-right:28px;}
+  .bring-item:nth-child(even){padding-left:28px; border-left:1px solid var(--line-on-light);}
+  .bring-mark{
     color:var(--gold);
+    font-family:'Fraunces', serif;
     font-size:1.1rem;
   }
-  .bring-col ul{
-    list-style:none;
-    margin:16px 0 0;
-    padding:0;
+  .reassure{
+    margin:26px 0 0;
+    font-size:1.12rem;
+    font-weight:600;
+    max-width:46ch;
   }
-  .bring-col li{
-    padding:9px 0;
-    border-top:1px solid var(--line-on-light);
-    font-size:0.95rem;
-  }
-  .bring-col li:first-child{border-top:none;}
+  .bring .cta-row .btn-note{color:#5a4a72;}
 
-  /* ---------- how it works ---------- */
-  .steps{counter-reset:step;}
+  /* ---------- why us ---------- */
+  .steps{margin-top:26px;}
   .step{
     display:grid;
     grid-template-columns:56px 1fr;
     gap:20px;
-    padding:26px 0;
+    padding:22px 0;
     border-top:1px solid var(--line-on-light);
   }
   .step:last-child{border-bottom:1px solid var(--line-on-light);}
   .step-num{
-    counter-increment:step;
     font-family:'Fraunces', serif;
     font-size:1.3rem;
     color:var(--gold);
   }
-  .step-num::before{content: counter(step);}
   .step h3{font-size:1.08rem; font-weight:600; font-family:'Public Sans', sans-serif;}
   .step p{margin:6px 0 0; color:#4a3d5c;}
-
-  /* ---------- tour dates ---------- */
-  .tour{background:var(--ink); color:var(--paper);}
-  .tour h2{color:var(--paper); font-size:clamp(1.6rem,2.6vw,2.1rem);}
-  .tour > .wrap > p{color:#d9cfe8; margin-top:14px; max-width:56ch;}
-  .tour-list{margin-top:34px; border-top:1px solid var(--line-on-dark);}
-  .tour-stop{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
-    padding:22px 0;
-    border-bottom:1px solid var(--line-on-dark);
-    flex-wrap:wrap;
+  .team-photo{margin:30px 0 0;}
+  .team-photo img{
+    width:100%;
+    max-height:440px;
+    object-fit:cover;
+    border-radius:6px;
+    border:1px solid var(--line-on-light);
   }
-  .tour-stop .place{font-family:'Fraunces', serif; font-size:1.15rem;}
-  .tour-stop .when{color:#d9cfe8; font-size:0.95rem;}
-  .tour-status{
-    font-size:0.8rem;
-    padding:5px 12px;
-    border-radius:999px;
-    white-space:nowrap;
-  }
-  .tour-status.confirmed{background:rgba(230,184,84,0.16); color:var(--gold-pale); border:1px solid rgba(230,184,84,0.4);}
-  .tour-status.soon{background:transparent; color:#a99cbf; border:1px solid var(--line-on-dark);}
+  .team-photo figcaption{margin-top:10px; font-size:0.9rem; color:#5a4a72;}
 
-  /* ---------- signup ---------- */
+  /* ---------- flyer offer ---------- */
+  .offer{
+    background:linear-gradient(100deg, var(--ink) 0%, var(--ink-soft) 100%);
+    color:var(--paper);
+    padding:60px 0;
+    text-align:center;
+    border-top:1px solid rgba(230,184,84,0.25);
+    border-bottom:1px solid rgba(230,184,84,0.25);
+  }
+  .offer-tag{
+    font-size:0.82rem;
+    font-weight:700;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--gold-pale);
+  }
+  .offer h2{
+    color:var(--paper);
+    font-size:clamp(1.5rem, 3.4vw, 2.2rem);
+    max-width:30ch;
+    margin:12px auto 0;
+    line-height:1.2;
+  }
+  .offer-terms{
+    margin:24px auto 0;
+    max-width:56ch;
+    padding-top:18px;
+    border-top:1px solid var(--line-on-dark);
+    font-size:0.9rem;
+    color:#d9cfe8;
+    text-align:left;
+  }
+  .offer-terms strong{color:var(--gold-pale);}
+
+  /* ---------- bottom ---------- */
   .signup{background:var(--paper-dim);}
   .signup-inner{
     max-width:560px;
@@ -381,47 +353,18 @@
     text-align:center;
   }
   .signup h2{font-size:clamp(1.7rem,3vw,2.3rem);}
-  .signup > .signup-inner > p{color:#4a3d5c; margin-top:14px;}
-  form{
-    margin-top:30px;
+  .final-details{
+    margin:22px auto 0;
+    display:inline-grid;
+    gap:8px;
     text-align:left;
-    background:var(--paper);
-    border:1px solid var(--line-on-light);
-    border-radius:6px;
-    padding:28px;
-    box-shadow:0 18px 40px rgba(42,22,66,0.1);
+    font-size:1.05rem;
   }
-  .field{margin-bottom:18px;}
-  .field:last-of-type{margin-bottom:0;}
-  label{
-    display:block;
-    font-size:0.88rem;
-    color:#4a3d5c;
-    margin-bottom:7px;
-  }
-  input, select{
-    width:100%;
-    background:var(--paper);
-    border:1px solid var(--line-on-light);
-    border-radius:4px;
-    padding:12px 14px;
-    color:var(--ink);
-    font-family:'Public Sans', sans-serif;
-    font-size:1rem;
-  }
-  input::placeholder{color:#9089a3;}
-  form .btn{width:100%; margin-top:6px; padding:14px 26px; text-align:center;}
-  .form-note{font-size:0.82rem; color:#6e6180; margin-top:14px; text-align:center;}
-  .confirm{
-    display:none;
-    padding:28px;
-    border:1px solid var(--gold);
-    border-radius:6px;
-    background:var(--paper);
-    text-align:center;
-  }
-  .confirm h3{color:var(--ink); font-size:1.3rem;}
-  .confirm p{color:#4a3d5c; margin-top:10px;}
+  .final-details div{display:flex; gap:14px;}
+  .final-details dt{color:var(--gold); font-weight:700; min-width:84px;}
+  .final-details dd{margin:0;}
+  .signup .cta-row{margin-top:30px;}
+  .signup .btn-note{color:#5a4a72;}
 
   /* ---------- footer ---------- */
   footer{padding:40px 0 50px;}
@@ -440,10 +383,13 @@
   @media (max-width: 860px){
     .hero .wrap{grid-template-columns:1fr;}
     .ticket{transform:rotate(0deg);}
-    .bring-cols{grid-template-columns:1fr; gap:28px;}
-    .bring-col{padding-left:0; border-left:none;}
+    .bring-grid{grid-template-columns:1fr;}
+    .bring-item:nth-child(even){padding-left:0; border-left:none;}
+    .bring-item:nth-child(odd){padding-right:0;}
     section{padding:52px 0;}
-    .tour-stop{flex-direction:column; align-items:flex-start; gap:8px;}
+    .hero{padding:36px 0 56px;}
+    .cta-row .btn{display:block; width:100%;}
+    .final-details div{flex-direction:column; gap:0;}
   }
 </style>
 </head>
@@ -460,160 +406,92 @@
   <div class="sparkle-field" id="sparkle-field" aria-hidden="true"></div>
   <div class="wrap">
     <div>
-      <div class="stop-flag"><span class="dot"></span>Stop 1 of the NC tour</div>
-      <h1>Bring what you have.<br>Leave with what it's <span class="shine-text">worth</span>.</h1>
-      <p class="lede">NC Gold Buyers Group is taking its buying event on the road across North Carolina — starting at the Aloft Raleigh-Durham Airport Brier Creek. Bring your gold, silver, coins, broken jewelry, and sterling silver for a free evaluation, with no obligation to sell.</p>
-      <div class="badge-row">
-        <span class="pill pill-dark">Free Evaluations — No Obligation to Sell</span>
-        <span class="pill pill-dark">Appointments Preferred — Walk-Ins Welcome</span>
-      </div>
+      <h1>Turn Your Unwanted Gold &amp; Silver Into <span class="shine-text">Cash</span></h1>
+      <p class="lede">Bring your jewelry, coins, sterling silver, and other gold or silver items for a free private evaluation. No obligation to sell.</p>
+      <div class="event-line">November 11–14 · 9 AM–5 PM · Aloft Brier Creek, <a href="https://www.google.com/maps/search/10020+Sellona+Street,+Raleigh" target="_blank" rel="noopener">10020 Sellona Street, Raleigh</a></div>
       <div class="cta-row">
-        <a href="https://calendar.app.google/TfrzskuVr5LWc8n68" class="btn" target="_blank" rel="noopener">Schedule an appointment</a>
-        <a href="https://www.google.com/maps/search/10020+Sellona+Street+Raleigh,+NC+27617?entry=gmail&source=g" class="btn btn-ghost" target="_blank" rel="noopener">Get directions</a>
+        <a href="https://calendar.app.google/TfrzskuVr5LWc8n68" class="btn" data-book="top" target="_blank" rel="noopener">Book My Free Appointment</a>
+        <div class="btn-note">Walk-ins welcome · Appointments preferred</div>
       </div>
     </div>
     <div class="ticket">
-      <div class="ticket-eyebrow"><span>Free to attend</span><strong>Stop 01</strong></div>
+      <div class="ticket-eyebrow"><span>Free to attend</span></div>
       <h3>Carolina Gold &amp; Silver Buying Event</h3>
       <dl>
         <dt>Dates</dt><dd>November 11–14, 2026</dd>
-        <dt>Venue</dt><dd>Aloft Raleigh-Durham Airport Brier Creek</dd>
+        <dt>Hours</dt><dd>9 AM–5 PM</dd>
+        <dt>Venue</dt><dd>Aloft Brier Creek</dd>
         <dt>Address</dt><dd>10020 Sellona Street, Raleigh, NC 27617</dd>
-        <dt>Format</dt><dd>Appointments preferred, walk-ins welcome</dd>
       </dl>
-      <div class="tear">Schedule online above, or stay tuned for more cities joining the tour.</div>
+      <div class="tear">Free evaluations — no obligation to sell.</div>
     </div>
-  </div>
-</section>
-
-<section class="cta-strip">
-  <div class="wrap">
-    <h2>That drawer of unwanted gold and silver could be worth more than you think.</h2>
-    <p>Bring it in for a free, no-obligation evaluation — appointments preferred, walk-ins always welcome.</p>
-    <a href="https://calendar.app.google/TfrzskuVr5LWc8n68" class="btn" target="_blank" rel="noopener">Schedule an appointment</a>
-  </div>
-</section>
-
-<section class="about" id="about">
-  <div class="wrap col-narrow">
-    <h2>Who we are</h2>
-    <p>NC Gold Buyers Group has been buying gold and silver from North Carolina families since 1989. We're based in Raleigh, and this event series is our way of bringing that same straightforward, professional evaluation to communities across the state — starting with this stop at Brier Creek.</p>
-    <p>No pressure, no pushy sales pitch — just a fair look at what you've got and a clear offer, from a business your neighbors have trusted for over three decades.</p>
   </div>
 </section>
 
 <section class="bring">
   <div class="wrap">
-    <h2>What we buy</h2>
-    <p class="sub">Bring your items in today for a free evaluation — there's never any obligation to sell.</p>
-    <div class="bring-cols">
-      <div class="bring-col">
-        <h3>Gold</h3>
-        <ul>
-          <li>Rings</li>
-          <li>Chains</li>
-          <li>Bracelets</li>
-          <li>Earrings</li>
-          <li>Class rings</li>
-          <li>Dental gold</li>
-          <li>Broken jewelry</li>
-        </ul>
-      </div>
-      <div class="bring-col">
-        <h3>Silver</h3>
-        <ul>
-          <li>Sterling flatware</li>
-          <li>Tea sets</li>
-          <li>Serving pieces</li>
-          <li>Silver jewelry</li>
-        </ul>
-      </div>
-      <div class="bring-col">
-        <h3>Coins &amp; bullion</h3>
-        <ul>
-          <li>Gold coins</li>
-          <li>Silver coins</li>
-          <li>Bullion</li>
-          <li>Coin collections</li>
-        </ul>
-      </div>
+    <h2>What can I bring?</h2>
+    <div class="bring-grid">
+      <div class="bring-item"><span class="bring-mark">✦</span><span>Gold jewelry</span></div>
+      <div class="bring-item"><span class="bring-mark">✦</span><span>Broken or mismatched jewelry</span></div>
+      <div class="bring-item"><span class="bring-mark">✦</span><span>Coins</span></div>
+      <div class="bring-item"><span class="bring-mark">✦</span><span>Sterling silver</span></div>
+      <div class="bring-item"><span class="bring-mark">✦</span><span>Items you’re unsure about</span></div>
+    </div>
+    <p class="reassure">You don’t need to know what it’s worth. We’ll evaluate it with you.</p>
+    <div class="cta-row">
+      <a href="https://calendar.app.google/TfrzskuVr5LWc8n68" class="btn" data-book="after-bring" target="_blank" rel="noopener">Book My Free Appointment</a>
+      <div class="btn-note">Walk-ins welcome · Appointments preferred</div>
     </div>
   </div>
 </section>
 
 <section class="how">
   <div class="wrap col-narrow">
-    <h2>Selling is simple</h2>
+    <h2>Why come to us?</h2>
     <div class="steps">
       <div class="step">
-        <div class="step-num"></div>
-        <div><h3>Bring your items</h3><p>Gold, silver, jewelry, coins, and sterling household pieces.</p></div>
+        <div class="step-num">✦</div>
+        <div><h3>Local, woman-owned North Carolina company</h3></div>
       </div>
       <div class="step">
-        <div class="step-num"></div>
-        <div><h3>Meet with our buyer</h3><p>We privately examine, test, and weigh your items.</p></div>
+        <div class="step-num">✦</div>
+        <div><h3>Licensed precious metals dealer</h3></div>
       </div>
       <div class="step">
-        <div class="step-num"></div>
-        <div><h3>Receive an offer</h3><p>There is never any obligation to sell.</p></div>
+        <div class="step-num">✦</div>
+        <div><h3>Buying team with approximately 45 years of combined experience</h3></div>
       </div>
-      <div class="step">
-        <div class="step-num"></div>
-        <div><h3>Get paid</h3><p>Accept our offer and receive payment by check.</p></div>
-      </div>
+    </div>
+    <!-- Team photo: upload a file named team.jpg to the same GitHub folder as index.html and it appears here. Until then this block stays hidden. -->
+    <figure class="team-photo">
+      <img src="team.jpg" alt="The NC Gold Buyers Group team" onerror="this.parentNode.style.display='none'">
+      <figcaption>The people you’ll meet.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="offer">
+  <div class="wrap">
+    <div class="offer-tag">Flyer offer</div>
+    <h2>Bring your flyer and receive a 20% bonus added to your entire final offer.</h2>
+    <div class="offer-terms">
+      <strong>Offer terms:</strong> Bring your flyer to your visit. The 20% bonus is added to your entire final offer.
     </div>
   </div>
 </section>
 
-<section class="tour">
-  <div class="wrap col-narrow">
-    <h2>The tour so far</h2>
-    <p>Raleigh is our first stop — more North Carolina cities will be added as dates are confirmed.</p>
-    <div class="tour-list">
-      <div class="tour-stop">
-        <div><div class="place">Raleigh, NC — Brier Creek</div><div class="when">November 11–14, 2026</div></div>
-        <div class="tour-status confirmed">Confirmed</div>
-      </div>
-      <div class="tour-stop">
-        <div><div class="place">Next city</div><div class="when">Date to be announced</div></div>
-        <div class="tour-status soon">Announced soon</div>
-      </div>
-      <div class="tour-stop">
-        <div><div class="place">Next city</div><div class="when">Date to be announced</div></div>
-        <div class="tour-status soon">Announced soon</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="signup" id="signup">
+<section class="signup">
   <div class="wrap signup-inner">
-    <h2>Schedule your appointment</h2>
-    <p>Appointments are preferred, but walk-ins are always welcome. Booking takes less than a minute — it's free, with no obligation to sell.</p>
-    <a href="https://calendar.app.google/TfrzskuVr5LWc8n68" class="btn" target="_blank" rel="noopener">Book your evaluation time</a>
-
-    <p style="margin-top:44px; font-size:0.95rem;">Prefer just to stay in the loop? Leave your info and we'll let you know as new tour dates are announced.</p>
-
-    <form id="signup-form">
-      <div class="field">
-        <label for="name">Full name</label>
-        <input id="name" name="name" type="text" required autocomplete="name">
-      </div>
-      <div class="field">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required autocomplete="email">
-      </div>
-      <div class="field">
-        <label for="phone">Phone</label>
-        <input id="phone" name="phone" type="tel" autocomplete="tel">
-      </div>
-      <button type="submit" class="btn btn-ghost" style="color:var(--ink); border-color:var(--line-on-light);">Keep me updated</button>
-      <p class="form-note">We'll only use this to contact you about NC Gold Buyers Group tour events.</p>
-    </form>
-
-    <div class="confirm" id="confirm">
-      <h3>You're on the list</h3>
-      <p>Thanks — we'll let you know as soon as the next tour stop is announced.</p>
+    <h2>Ready when you are</h2>
+    <dl class="final-details">
+      <div><dt>Dates</dt><dd>November 11–14</dd></div>
+      <div><dt>Hours</dt><dd>9 AM–5 PM</dd></div>
+      <div><dt>Location</dt><dd>Aloft Brier Creek, <a href="https://www.google.com/maps/search/10020+Sellona+Street,+Raleigh" target="_blank" rel="noopener">10020 Sellona Street, Raleigh</a></dd></div>
+    </dl>
+    <div class="cta-row">
+      <a href="https://calendar.app.google/TfrzskuVr5LWc8n68" class="btn" data-book="bottom" target="_blank" rel="noopener">Book My Free Appointment</a>
+      <div class="btn-note">Walk-ins welcome · Appointments preferred</div>
     </div>
   </div>
 </section>
@@ -621,35 +499,45 @@
 <footer>
   <div class="wrap">
     <div>Presented by NC Gold Buyers Group, LLC · Raleigh, NC</div>
-    <div>Carolina Gold &amp; Silver Buying Event — Stop 1: Brier Creek, Raleigh, NC, Nov 11–14, 2026</div>
+    <div>Carolina Gold &amp; Silver Buying Event — Aloft Brier Creek, Nov 11–14, 2026</div>
   </div>
 </footer>
 
 <script>
-  var SHEET_ENDPOINT = "https://script.google.com/macros/s/AKfycbwIhf6dzI6VVgpR6Yi70DKFJv6ROLlS7PPrWI_AovhbfXN8IFT7fUPIt_G4k9D2yhlc/exec";
+  // ---- Source tracking ----
+  // Tag every ad, post, and QR code with ?src=NAME (e.g. ?src=facebook, ?src=flyer-qr).
+  var TRACK_ENDPOINT = "https://script.google.com/macros/s/AKfycbwIhf6dzI6VVgpR6Yi70DKFJv6ROLlS7PPrWI_AovhbfXN8IFT7fUPIt_G4k9D2yhlc/exec";
 
-  document.getElementById('signup-form').addEventListener('submit', function(e){
-    e.preventDefault();
+  function getSource(){
+    var src = '';
+    try{
+      var p = new URLSearchParams(window.location.search);
+      src = (p.get('src') || p.get('utm_source') || '').toLowerCase().replace(/[^a-z0-9_-]/g,'').slice(0,40);
+    }catch(e){}
+    try{
+      if (src) { sessionStorage.setItem('ncgb_src', src); }
+      else { src = sessionStorage.getItem('ncgb_src') || ''; }
+    }catch(e){}
+    return src || 'direct';
+  }
+  var SOURCE = getSource();
 
-    var payload = {
-      name: document.getElementById('name').value,
-      email: document.getElementById('email').value,
-      phone: document.getElementById('phone').value
-    };
+  function track(type, button){
+    try{
+      fetch(TRACK_ENDPOINT, {
+        method:'POST', mode:'no-cors', keepalive:true,
+        headers:{'Content-Type':'text/plain;charset=utf-8'},
+        body: JSON.stringify({type:type, source:SOURCE, button:button || ''})
+      }).catch(function(){});
+    }catch(e){}
+  }
 
-    fetch(SHEET_ENDPOINT, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-      body: JSON.stringify(payload)
-    }).catch(function(err){
-      console.error('Signup submission failed', err);
-    });
-
-    document.getElementById('signup-form').style.display = 'none';
-    document.getElementById('confirm').style.display = 'block';
+  track('visit');
+  Array.prototype.forEach.call(document.querySelectorAll('[data-book]'), function(a){
+    a.addEventListener('click', function(){ track('book_click', a.getAttribute('data-book')); });
   });
 
+  // ---- Sparkle ----
   (function(){
     var field = document.getElementById('sparkle-field');
     var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
